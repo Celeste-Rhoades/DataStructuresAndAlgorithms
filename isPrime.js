@@ -6,12 +6,19 @@
 
 // You can assume that the input number is a positive integer.
 
-const isPrime = n => {
-  if (n < 2) return false;
+// const isPrime = n => {
+//   if (n < 2) return false;
 
-  for (let i = 2; i <= Math.sqrt(n); i += 1) {
+//   for (let i = 2; i <= Math.sqrt(n); i += 1) {
+//     if (n % i === 0) return false;
+//   }
+
+//   return true;
+// };
+// my solution
+const isPrime = n => {
+  for (let i = 2; i <= Math.sqrt(n); i++) {
     if (n % i === 0) return false;
   }
-
-  return true;
+  return n > 1;
 };
