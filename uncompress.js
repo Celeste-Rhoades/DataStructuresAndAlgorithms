@@ -26,6 +26,28 @@ const uncompress = s => {
 
   return result;
 };
+// or
+
+// const uncompress = (s) => {
+//   let str = s.split('')
+//   let copy = ''
+//  let newStr = ''
+//   for( let i = 0; i < s.length; i++) {
+//     if(typeof +s.charAt(i) === 'number'){
+//        for(let j = 0; j < s.length; j++){
+//         if(Number.isNaN(+s.charAt(j))){
+//         copy = str.slice(i , j ).join('')
+//          i = j + 1
+//         for(let k = copy; k > 0; k--){
+//             newStr += str[j]
+//         }
+//       }
+//     }
+//     }
+//   }
+//   return newStr
+//   }
+
 uncompress("2c3a1t"); // -> 'ccaaat'
 uncompress("4s2b"); // -> 'ssssbb'
 uncompress("2p1o5p"); // -> 'ppoppppp'
