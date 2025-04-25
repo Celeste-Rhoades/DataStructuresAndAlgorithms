@@ -22,3 +22,18 @@ const isPrime = n => {
   }
   return n > 1;
 };
+
+const isPrime = n => {
+  if (n < 2) {
+    return false;
+  }
+  for (let i = 2; i < n; i++) {
+    if (n % i === 0) {
+      return false;
+    }
+  }
+  return true;
+};
+isPrime(2); // -> true
+isPrime(3); // -> true
+isPrime(4); // -> false
