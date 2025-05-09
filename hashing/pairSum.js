@@ -17,15 +17,15 @@ const pairSum = (numbers, targetSum) => {
     prevNum[num] = i;
   }
 };
-const pairSum = (numbers, targetSum) => {
-  for (let i = 0; i < numbers.length; i++) {
-    for (let j = i + 1; j < numbers.length; j++) {
-      if (numbers[i] + numbers[j] === targetSum) {
-        return [i, j];
-      }
-    }
-  }
-};
+// const pairSum = (numbers, targetSum) => {
+//   for (let i = 0; i < numbers.length; i++) {
+//     for (let j = i + 1; j < numbers.length; j++) {
+//       if (numbers[i] + numbers[j] === targetSum) {
+//         return [i, j];
+//       }
+//     }
+//   }
+// };
 module.exports = {
   pairSum,
 };
