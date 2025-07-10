@@ -2,9 +2,9 @@ const longestWord = sentence => {
   // todo
   let split = sentence.split(" ");
   let word = "";
-  for (words of split) {
-    if (words.length >= word.length) {
-      word = words;
+  for (word of split) {
+    if (word.length >= word.length) {
+      word = word;
     }
   }
 
